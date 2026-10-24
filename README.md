@@ -13,9 +13,9 @@ Publishing a personal digital garden using Quartz is immensely powerful, but com
 
 Rather than just listing documentation, this repository serves as both:
 1. **A Live Digital Garden:** My personal published notes, essays, and technical insights.
-2. **A Concrete Blueprint:** A battle-tested Quartz 5 setup with real source content (`/content`) and its corresponding generated output, allowing you to study, inspect, and fork a fully working architecture.
+2. **A Concrete Blueprint:** A battle-tested Quartz 5 setup with real source content ([`/content`](content)) and its corresponding generated output, allowing you to study, inspect, and fork a fully working architecture.
 
-    _**Note:** Because generally the default output folder, which is `/public`, is not checked-in into a git repo, the actual generated content is put inside another subdirectory [`/cybergarden`](cybergarden). This allow the developer who wants to try out this site to have an empty `/public` folder to test on, while the `/cybergarden` serves as the source of the GitHub pages of My Garden._
+    _**Note:** Because generally the default output folder, which is `/public`, is not checked-in into a git repo, the actual generated content is put inside another subdirectory [`/cybergarden`](cybergarden). This allow the developer who wants to try out this site to have an empty `/public` folder to test on, while the [`/cybergarden`](cybergarden) serves as the source of the GitHub pages of My Garden._
 
 
 ---
@@ -33,9 +33,9 @@ If you write notes in Obsidian, you likely rely on standard newline behavior (`h
 * Ensures your rendered web pages match your local Obsidian reading experience line-for-line without manual `<br>` hacks or trailing double spaces.
 
 ### 🔍 Fully Functional & Transparent Structure
-* **Source (`/content`):** Real-world raw Markdown notes, demonstrating internal links (`[[wikilinks]]`), frontmatter setup, tag hierarchies, and multilingual folder organizations.
+* **Source ([`/content`](content)):** Real-world raw Markdown notes, demonstrating internal links (`[[wikilinks]]`), frontmatter setup, tag hierarchies, and multilingual folder organizations.
 * **Build Target (`/public`):** Build output. This is where Quartz compiles specific Markdown structures into final HTML/CSS/JS.
-* **Live Static Site (`/cybergarden`):** This is where I put the actual generated content and checked in git for GitHub Pages to publish for me.
+* **Live Static Site ([`/cybergarden`](cybergarden)):** This is where I put the actual generated content and checked in git for GitHub Pages to publish for me.
 
 ---
 
@@ -63,7 +63,7 @@ If you write notes in Obsidian, you likely rely on standard newline behavior (`h
     npx quartz plugin install --from-config
     ```
 
-    Because this is a running site, naturally we already have a config file `quartz.config.yaml` in place, which is based on Quartz 5's default config file `quartz.config.default.yaml`. That's why `--from-config` would work properly. If you're starting a new project, following commands are needed to install additional plugins: (The choices of the plugin is, of course, opinionated.)
+    Because this is a running site, naturally we already have a config file [`quartz.config.yaml`](quartz.config.yaml) in place, which is based on Quartz 5's default config file [`quartz.config.default.yaml`](quartz.config.default.yaml) (unmodified). That's why `--from-config` would work properly. If you're starting a new project from scratch, following commands are needed to install additional plugins: (The choices of the plugin is, of course, opinionated.)
 
     ```bash
     npx quartz plugin add github:boxi-os/quartz-navigations
@@ -114,6 +114,38 @@ If you are using **cyberGarden** as a reference to fix or customize your own Qua
 Check `quartz.config.yaml`: Inspect the configurations for third-party plugins and line-break parsing settings.
 
 Explore `/content` Structure: See how frontmatter parameters (tags, aliases, dates, language metadata) are structured for multi-language navigation.
+
+## 🧩 Essential Plugins & Architectural Workarounds
+
+If you have tried customizing **Quartz 5** using traditional guides or tutorials written for earlier versions, you may have noticed that many `quartz.layout.ts` tweaks simply **do not work**. 
+
+### ⚠️ The Quartz 5 `quartz.layout.ts` Limitation
+
+In the current version of Quartz 5, there is a known upstream issue where most direct modifications to `quartz.layout.ts` become completely ineffective. After tracing the core codebase, I confirmed this behavior and reported [the findings](https://github.com/jackyzha0/quartz/issues/2382#issuecomment-5985489119) back to the Quartz 5 repository. However, the upstream issue was closed without a native fix, leaving only a rather clunky [workaround](https://github.com/jackyzha0/quartz/issues/2382#issuecomment-5622495613). 
+
+Because of this, standard community tricks for modifying default layouts (like customizing the built-in Explorer or Footer) are currently broken or extremely fragile out of the box unless you write custom plugins.
+
+---
+
+### 🔌 Ecosystem Solutions Used in `cyberGarden`
+
+To completely bypass these limitations—and to achieve full multilingual capabilities—**cyberGarden** integrates three crucial third-party plugins from [boxi-os](https://github.com/boxi-os):
+
+#### 1. [`quartz-multilanguage`](https://github.com/boxi-os/quartz-multilanguage)
+* **Purpose:** Core multilingual routing, page metadata processing, and content switching.
+* **Why it's essential:** Enables seamless management and display of multilingual essays (e.g., English, Chinese) without hacky folder redirects.
+
+#### 2. [`quartz-navigations`](https://github.com/boxi-os/quartz-navigations)
+* **Purpose:** Replaces the stock Quartz Explorer component.
+* **Why it's essential:** Customizing the default Quartz Explorer to respect language contexts triggers the layout reactivity bug mentioned above. This plugin works around the issue out of the box, offering a highly versatile, powerful, and language-aware navigation sidebar that "just works."
+
+#### 3. [`quartz-layout-box`](https://github.com/boxi-os/quartz-layout-box)
+* **Purpose:** Replaces the rigid stock footer component.
+* **Why it's essential:** The default community footer contains hardcoded elements that are difficult to adapt. `quartz-layout-box` provides a flexible layout wrapper, allowing full control over footer components, links, and custom styling without breaking Quartz 5 builds.
+
+---
+
+💡 **Takeaway for Builders:** If you are struggling with layout customizations in Quartz 5, avoid fighting `quartz.layout.ts` directly. Review how these three plugins are hooked into `cyberGarden`'s configuration files as a blueprint for your own site.
 
 ## 🤝 Contributing & Feedback
 Feel free to open an issue or pull request if you find bugs, have questions about the Quartz setup, or want to suggest improvements to the multilingual routing.
