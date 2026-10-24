@@ -1,4 +1,4 @@
-# cybarGarden - A Quartz v5 Full Template for Personal Digital Garden
+# cyberGarden - A Quartz v5 Full Template for Personal Digital Garden
 
 > A personal [digital garden](https://jzhao.xyz/posts/networked-thought) powered by [**Quartz 5**](https://quartz.jzhao.xyz/), built to share thoughts, essays, and notes—while serving as a fully functional, open-source template for building your own knowledge site.
 
