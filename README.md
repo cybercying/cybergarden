@@ -8,7 +8,8 @@
 
 Publishing a personal digital garden using Quartz is immensely powerful, but coming from tools like **Obsidian** or building a setup tailored for **multilingual content** comes with a steep learning curve.
 
-**cyberGarden** was created to bridge that gap. 
+**cyberGarden** was created to bridge that gap. This repository is the source code of a live (my) digital garden website. The final generated result can be visited at _My Garden_ in the following link:
+- https://cybercying.github.io/cybergarden/
 
 Rather than just listing documentation, this repository serves as both:
 1. **A Live Digital Garden:** My personal published notes, essays, and technical insights.
@@ -30,7 +31,10 @@ If you write notes in Obsidian, you likely rely on standard newline behavior (`h
 
 ### 🔍 Fully Functional & Transparent Structure
 * **Source (`/content`):** Real-world raw Markdown notes, demonstrating internal links (`[[wikilinks]]`), frontmatter setup, tag hierarchies, and multilingual folder organizations.
-* **Build Target (`/public`):** Included or referenceable build output so you can inspect how Quartz compiles specific Markdown structures into final HTML/CSS/JS.
+* **Build Target (`/public`):** Build output. This is where Quartz compiles specific Markdown structures into final HTML/CSS/JS.
+* **Live Static Site (`/cybergarden`):** This is where I put the actual generated content and checked in git for GitHub Pages to publish for me.
+
+    _**Note:** Because generally `/public` folder is not checked-in into a git repo, the actual generated content is put inside another subdirectory `/cybergarden`. This allow the developer who wants to try out this site to have an empty `/public` folder to test on, while the `/cybergarden` serves as the source of the GitHub pages of My Garden._
 
 ---
 
@@ -83,6 +87,25 @@ If you write notes in Obsidian, you likely rely on standard newline behavior (`h
     ```
 
     The output will be placed in the `public/` directory.
+
+## 📂 Project Structure
+```plaintext
+cyberGarden/
+├── content/                   # Obsidian Markdown files & media assets
+│   ├── index.zh.md             # Chinese landing page
+│   ├── index.ja.md             # Japanese landing page
+│   ├── index.ko.md             # Korean landing page
+│   ├── index.es.md             # Spanish landing page
+│   └── index.md                # Landing page
+├── quartz/                     # Quartz core configurations, components, and layouts
+│   ├── components/             # Custom TSX/JSX UI components
+│   └── plugins/                # Markdown processors, transformers, and emitters
+├── quartz.config.yaml          # Configuration file, adapted for cyberGarden
+├── quartz.config.default.yaml  # Default configuration file template (unchanged)
+├── cybergarden/                # Checked-in generated result for GitHub Pages
+└── public/                     # Generated static website (HTML, CSS, JS). 
+                                # Left empty for the convenience of the user.
+```
 
 ## 📖 Learning from This Template
 If you are using **cyberGarden** as a reference to fix or customize your own Quartz site:
