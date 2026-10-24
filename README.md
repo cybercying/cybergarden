@@ -13,7 +13,10 @@ Publishing a personal digital garden using Quartz is immensely powerful, but com
 
 Rather than just listing documentation, this repository serves as both:
 1. **A Live Digital Garden:** My personal published notes, essays, and technical insights.
-2. **A Concrete Blueprint:** A battle-tested Quartz 5 setup with real source content (`/content`) and its corresponding generated output (`/public`), allowing you to study, inspect, and fork a fully working architecture.
+2. **A Concrete Blueprint:** A battle-tested Quartz 5 setup with real source content (`/content`) and its corresponding generated output, allowing you to study, inspect, and fork a fully working architecture.
+
+    _**Note:** Because generally the default output folder, which is `/public`, is not checked-in into a git repo, the actual generated content is put inside another subdirectory [`/cybergarden`](cybergarden). This allow the developer who wants to try out this site to have an empty `/public` folder to test on, while the `/cybergarden` serves as the source of the GitHub pages of My Garden._
+
 
 ---
 
@@ -33,8 +36,6 @@ If you write notes in Obsidian, you likely rely on standard newline behavior (`h
 * **Source (`/content`):** Real-world raw Markdown notes, demonstrating internal links (`[[wikilinks]]`), frontmatter setup, tag hierarchies, and multilingual folder organizations.
 * **Build Target (`/public`):** Build output. This is where Quartz compiles specific Markdown structures into final HTML/CSS/JS.
 * **Live Static Site (`/cybergarden`):** This is where I put the actual generated content and checked in git for GitHub Pages to publish for me.
-
-    _**Note:** Because generally `/public` folder is not checked-in into a git repo, the actual generated content is put inside another subdirectory `/cybergarden`. This allow the developer who wants to try out this site to have an empty `/public` folder to test on, while the `/cybergarden` serves as the source of the GitHub pages of My Garden._
 
 ---
 
@@ -91,7 +92,7 @@ If you write notes in Obsidian, you likely rely on standard newline behavior (`h
 ## 📂 Project Structure
 ```plaintext
 cyberGarden/
-├── content/                   # Obsidian Markdown files & media assets
+├── content/                    # Obsidian Markdown files & media assets
 │   ├── index.zh.md             # Chinese landing page
 │   ├── index.ja.md             # Japanese landing page
 │   ├── index.ko.md             # Korean landing page
