@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "quartz-layout-box": {
+      "source": "github:boxi-os/quartz-layout-box",
+      "resolved": "https://github.com/boxi-os/quartz-layout-box.git",
+      "commit": "c72947ccb9320cc5ded880779ee7e2b2dfbfe5d6",
+      "installedAt": "2026-10-24T07:32:43.209Z"
+    },
+    "quartz-multilanguage": {
+      "source": "github:boxi-os/quartz-multilanguage",
+      "resolved": "https://github.com/boxi-os/quartz-multilanguage.git",
+      "commit": "4d0d8a69c7426b17c91d514a1ff46701b4a8e211",
+      "installedAt": "2026-10-24T07:32:43.193Z"
+    },
+    "quartz-navigations": {
+      "source": "github:boxi-os/quartz-navigations",
+      "resolved": "https://github.com/boxi-os/quartz-navigations.git",
+      "commit": "354dd51227269c8a9b91831369f7b43759cf857e",
+      "installedAt": "2026-10-24T07:32:43.443Z"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>cyberGarden</title>
+      <link>https://pegasus.geniusvision.net/cybergarden</link>
+      <description>Last 10 notes on cyberGarden</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>2026_09</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/essays/2026_09/</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/essays/2026_09/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 24 Oct 2026 07:33:00 GMT</pubDate>
+  </item><item>
+    <title>essays</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/essays/</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/essays/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 24 Oct 2026 07:33:00 GMT</pubDate>
+  </item><item>
+    <title>2026_10</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 24 Oct 2026 07:33:00 GMT</pubDate>
+  </item><item>
+    <title>Tag Index</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/tags/</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/tags/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 24 Oct 2026 07:33:00 GMT</pubDate>
+  </item><item>
+    <title>Escaping the Legacy Web Host: Why I Finally Migrated My Domain From Bluehost to Cloudflare</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/06-migrated-to-cloudflare</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/06-migrated-to-cloudflare</guid>
+    <description><![CDATA[ When I first set up my web presence back in 2007, Bluehost felt like a logical choice. ]]></description>
+    <pubDate>Wed, 21 Oct 2026 02:31:00 GMT</pubDate>
+  </item><item>
+    <title>Welcome to cyberGarden</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/</guid>
+    <description><![CDATA[ Essays October, 2026 Escaping the Legacy Web Host: Why I Finally Migrated My Domain From Bluehost to Cloudflare The Myth of Modern Tooling, Planned Obsolescence, and Why I Settled on Rust The Great Corral: Why History’s “Trail of Tears” Keeps Repeating The Trojan Horse in Your API: How ‘Agentic Arch... ]]></description>
+    <pubDate>Wed, 21 Oct 2026 01:05:00 GMT</pubDate>
+  </item><item>
+    <title>從輸入法之爭看軟體生態：技術信任、商業壟斷與獨立開發者的宿命</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/05-input-method-software.zh</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/05-input-method-software.zh</guid>
+    <description><![CDATA[ 最近因爲替換電腦與手機輸入法的過程，引發了我對軟體架構、商業模式，乃至於兩岸軟體產業生態系的一連串思考。從工具的挑選到產業的興衰，這不僅僅是使用者體驗的比較，更是一場關於技術信任與資本主義的深度觀察。 中國輸入法的演進及改變：體驗驚豔 過往對中國軟體的印象，多半停留在「全家桶」、綁架首頁與難以徹底移除的流氓特徵。然而，這幾年中國軟體產業似乎經歷了某種根本性的轉變，介面設計與功能創新皆有顯著提升。 百度輸入法（PC版）：雖然功能豐富，但其強烈侵入性的彈窗，依然難以擺脫傳統中國軟體的舊習，長期使用極易引發視覺與心理疲勞，最終只能移除。 微信輸入法（PC版 / 手機版）： PC版：主打極簡、無廣告，... ]]></description>
+    <pubDate>Mon, 12 Oct 2026 01:29:00 GMT</pubDate>
+  </item><item>
+    <title>歡迎光臨我的祕密花園cyberGarden</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/index.zh</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/index.zh</guid>
+    <description><![CDATA[ 中文版短文 2026年10月 從輸入法之爭看軟體生態：技術信任、商業壟斷與獨立開發者的宿命 現代工具的迷思、計畫性報廢，與我選擇 Rust 的理由 巨大的圍欄：為什麼歷史上的「血淚之路」不斷重演 The Trojan Horse in Your API: How ‘Agentic Architecture’ Steals Your Domain Know-How 療癒的幻象：為何現代西醫只做「疾病管理」，而不是「根治」？ 2026年9月 吃光未來的種子：為什麼「淘汰初級員工」最終會殺死高級專家？ 網路安全悖論：為什麼「越安全」的網頁，反而越脆弱？ 其他 Songs . ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:38:00 GMT</pubDate>
+  </item><item>
+    <title>現代工具的迷思、計畫性報廢，與我選擇 Rust 的理由</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/04-myth-of-modern-tooling.zh</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/04-myth-of-modern-tooling.zh</guid>
+    <description><![CDATA[ 我在軟體工程領域滾打多年，早已對整個資訊產業風吹草動的流行趨勢，抱持著極度懷疑且冷眼旁觀的態度。科技界每隔幾年，就會包裝出某種「革命性」的新工具，宣稱能一舉解決跨平台、高效能或開發效率的所有痛點。然而，只要剝開那些亮麗的行銷外衣，就會發現絕大多數的底座根本是空中樓閣、極不穩固。 舊時代的泥淖：C++ 的歷史包袱與生態系割裂 以傳統的 C++ 語言為例，它確實威力強大，但也是個極其難搞的「舊時代怪物」。它承載了數十年的歷史包袱，且缺乏一套統一、完整的標準建置工具。開發者為了打造一個大型項目，往往得耗費無數精力，去東拼西湊一套專屬的編譯與管理流程。 這導致了嚴重的軟體分裂化。許多大型開源軟體——比... ]]></description>
+    <pubDate>Thu, 08 Oct 2026 10:07:00 GMT</pubDate>
+  </item><item>
+    <title>The Myth of Modern Tooling, Planned Obsolescence, and Why I Settled on Rust</title>
+    <link>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/04-myth-of-modern-tooling</link>
+    <guid>https://pegasus.geniusvision.net/cybergarden/essays/2026_10/04-myth-of-modern-tooling</guid>
+    <description><![CDATA[ I’ve spent enough time in the software engineering trenches to develop a healthy, bordering on hostile, skepticism toward industry trends. ]]></description>
+    <pubDate>Thu, 08 Oct 2026 09:34:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

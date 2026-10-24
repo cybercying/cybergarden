@@ -1,3 +1,11 @@
+This repository is dual-licensed / open for exploration:
+
+- **Code / Configurations (/quartz, configs):** Released under the MIT License.
+
+- **Personal Writings / Essays (/content):** All rights reserved by the author.
+
+Below is "MIT License" for quartz modification andconfigs.
+
 MIT License
 
 Copyright (c) 2021 jackyzha0
