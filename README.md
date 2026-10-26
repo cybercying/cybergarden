@@ -117,11 +117,11 @@ Explore `/content` Structure: See how frontmatter parameters (tags, aliases, dat
 
 ## 🧩 Essential Plugins & Architectural Workarounds
 
-If you have tried customizing **Quartz 5** using traditional guides or tutorials written for earlier versions, you may have noticed that many `quartz.layout.ts` tweaks simply **do not work**. 
+If you have tried customizing **Quartz 5** using traditional guides or tutorials written for earlier versions, you may have noticed that many `quartz.ts` (formerly known as `quartz.layout.ts`) tweaks simply **do not work**. 
 
 ### ⚠️ The Quartz 5 `quartz.layout.ts` Limitation
 
-In the current version of Quartz 5, there is a known upstream issue where most direct modifications to `quartz.layout.ts` become completely ineffective. After tracing the core codebase, I confirmed this behavior and reported [the findings](https://github.com/jackyzha0/quartz/issues/2382#issuecomment-5985489119) back to the Quartz 5 repository. However, the upstream issue was closed without a native fix, leaving only a rather clunky [workaround](https://github.com/jackyzha0/quartz/issues/2382#issuecomment-5622495613). 
+In the current version of Quartz 5, there is a known upstream issue where most direct modifications to `quartz.ts` (formerly known as `quartz.layout.ts`) become completely ineffective. After tracing the core codebase, I confirmed this behavior and reported [the findings](https://github.com/jackyzha0/quartz/issues/2382#issuecomment-5985489119) back to the Quartz 5 repository. However, the upstream issue was closed without a native fix, leaving only a rather clunky [workaround](https://github.com/jackyzha0/quartz/issues/2382#issuecomment-5622495613). 
 
 Because of this, standard community tricks for modifying default layouts (like customizing the built-in Explorer or Footer) are currently broken or extremely fragile out of the box unless you write custom plugins.
 
